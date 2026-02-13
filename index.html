@@ -58,7 +58,7 @@ margin-bottom:25px;
 white-space:pre-line;
 }
 
-/* ✨ BEAUTIFUL BUTTON */
+/* Button */
 button{
 padding:14px 35px;
 border:none;
@@ -107,34 +107,34 @@ background-position:center;
 background-repeat:no-repeat;
 }
 
-/* ⭐ Second Page Image Background */
+/* Page 2 */
 .page2{
 background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("https://image2url.com/r2/default/images/1770954709581-87979e5e-a21b-4981-aee5-fd7e2d3b48bf.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* ⭐ Memories Page Background Updated */
+.page3{
+background:
 linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-url("https://instasize.com/p/789d7524b00bc04eb180e38b3ea5889534cc5cff15098e1e76896bc8e750a36b");
+url("https://image2url.com/r2/default/images/1770954709581-87979e5e-a21b-4981-aee5-fd7e2d3b48bf.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 }
 
-/* Extra Glow for Page 2 Card */
-.page2 .card{
-backdrop-filter:blur(25px);
-background:rgba(255,255,255,0.2);
-box-shadow:0 0 60px rgba(255,255,255,0.7);
-animation:fadeIn 1.5s ease, glowCard 3s infinite alternate;
-}
-
-@keyframes glowCard{
-from{box-shadow:0 0 30px rgba(255,255,255,0.4);}
-to{box-shadow:0 0 80px rgba(255,105,180,0.9);}
-}
-
 /* Other Pages */
-.page3,.page4,.page5{
-background:linear-gradient(-45deg,#ff416c,#ff4b2b,#ff758c,#ff7eb3);
-background-size:400% 400%;
-animation:gradientMove 12s ease infinite;
+.page4,.page5{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("https://image2url.com/r2/default/images/1770956710729-84966257-c152-4e26-9bb2-eb6dc622f05e.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 /* Cake */
@@ -245,7 +245,6 @@ to{opacity:1;transform:translateY(0);}
 100%{box-shadow:0 0 15px rgba(255,65,108,0.6);}
 }
 
-/* Mobile */
 @media(max-width:600px){
 h1{font-size:28px;}
 p{font-size:15px;}
@@ -292,11 +291,11 @@ Because best friends are the ones who turn ordinary days into unforgettable memo
 <div class="card">
 <h1>📸 Our Memories</h1>
 <div class="memory-gallery">
-<img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d">
-    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-    <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
-    <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8">
+<img src="https://image2url.com/r2/default/images/1770955189656-f89528af-9e95-49d4-aead-9fbb162c59a1.jpeg">
+<img src="https://image2url.com/r2/default/images/1770955211138-55a544f4-6759-432b-a22a-a4b2d04bd05c.jpeg">
+<img src="https://image2url.com/r2/default/images/1770955233093-c1ebcf06-9acf-4b39-b70b-0b4d922e2807.jpeg">
+<img src="https://image2url.com/r2/default/images/1770955233093-c1ebcf06-9acf-4b39-b70b-0b4d922e2807.jpeg">
+<img src="https://image2url.com/r2/default/images/1770954709581-87979e5e-a21b-4981-aee5-fd7e2d3b48bf.jpg">
 </div>
 <button onclick="nextPage()">🎁 One More Surprise...</button>
 </div>
@@ -370,5 +369,3 @@ document.body.appendChild(balloon);
 
 </body>
 </html>
-
-
